@@ -20,4 +20,3 @@ print('3')
 # print(exit_code)
 
 sys.exit(app.exec())
-

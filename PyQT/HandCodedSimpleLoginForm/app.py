@@ -1,3 +1,4 @@
+from json.tool import main
 import sys
 
 from PyQt5 import QtWidgets as qtw
@@ -5,25 +6,35 @@ from PyQt5 import QtCore as qtc
 from PyQt5 import QtGui as qtg
 
 
-class MainWindow(qtw.QMainWindow ):
+class MainWindow(qtw.QWidget ):
 	def __init__(self , *args, **kwargs):
 		super().__init__(*args, **kwargs)
 
-		# main_label = qtw.QLabel('Simple Login Form', parent=self)
 
+		# --------------------------- your code starts here -------------------------- #
+		# create user input widgets:
+		user_name_input = qtw.QLineEdit()
+		password_input = qtw.QLineEdit()
+		password_input.setEchoMode(qtw.QLineEdit.Password)
+		# create the submit button:
+		btn_submit = qtw.QPushButton('Login')
+		# create title label:
+		title = qtw.QLabel('Simple Login Form', parent=self)
+
+		# create Form Layout and layout widgets in it
 		form_layout = qtw.QFormLayout()
+		form_layout.addRow('User name: ', user_name_input)
+		form_layout.addRow('Password: ', password_input)
+		form_layout.addRow('',btn_submit)
 
-		lblUserName = qtw.QLabel('User Name')
-		lblPass = qtw.QLabel('Password')
-		leUserName = qtw.QLineEdit()
-		lePass = qtw.QLineEdit()
+		# create  the main_layout
+		main_layout = qtw.QVBoxLayout()
+		main_layout.addWidget(title)
+		main_layout.addLayout(form_layout)
 
-		form_layout.addWidget(lblUserName)
-		form_layout.addWidget(lblPass)
-		form_layout.addWidget(leUserName)
-		form_layout.addWidget(lePass)
+		self.setLayout(main_layout)
 
-		self.setLayout(form_layout)
+		# ---------------------------- your code ends here --------------------------- #
 
 		self.show();
 
