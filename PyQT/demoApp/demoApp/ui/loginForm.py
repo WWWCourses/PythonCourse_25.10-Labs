@@ -4,6 +4,7 @@ from PyQt5 import QtGui as qtg
 
 class LoginForm(qtw.QWidget ):
 	def __init__(self , *args, **kwargs):
+		print(kwargs)
 		super().__init__(*args, **kwargs)
 
 		# --------------------------- your code starts here -------------------------- #
@@ -28,7 +29,6 @@ class LoginForm(qtw.QWidget ):
 		main_layout.addLayout(form_layout)
 
 		self.setLayout(main_layout)
-
 		# ---------------------------- your code ends here --------------------------- #
 
 

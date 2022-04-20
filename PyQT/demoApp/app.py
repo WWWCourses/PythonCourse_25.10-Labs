@@ -37,14 +37,14 @@ class MainWindow(qtw.QWidget):
 
 		btnLogIn.clicked.connect( self.onBtnLogInClick )
 
-
-		# TODO: how to set maximum streach size to whole layout (without styles)
-
 		self.show();
 
 	def onBtnLogInClick(self):
-
 		print('btnLogIn was clicked')
+		loginForm = LoginForm(parent=self)
+		# TODO why not works
+		loginForm.show()
+
 
 
 if __name__ == '__main__':
