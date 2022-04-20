@@ -29,6 +29,7 @@ class LoginForm(qtw.QWidget ):
 		main_layout.addLayout(form_layout)
 
 		self.setLayout(main_layout)
+		self.setWindowTitle('Simple Login Form')
 		# ---------------------------- your code ends here --------------------------- #
 
 

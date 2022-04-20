@@ -41,9 +41,8 @@ class MainWindow(qtw.QWidget):
 
 	def onBtnLogInClick(self):
 		print('btnLogIn was clicked')
-		loginForm = LoginForm(parent=self)
-		# TODO why not works
-		loginForm.show()
+		self.loginForm = LoginForm()
+		self.loginForm.show()
 
 
 
