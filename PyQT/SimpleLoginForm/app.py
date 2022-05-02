@@ -1,12 +1,10 @@
 import sys
 from PyQt5 import QtWidgets as qtw
-from Ui_form import Ui_Form
+from SimpleLoginForm.loginForm import LoginForm
 
-
-class MainWindow(qtw.QWidget, Ui_Form):
+class MainWindow(qtw.QWidget, LoginForm):
 	def __init__(self):
 		super().__init__()
-		self.setupUi(self)
 
 		# add as any properties here...
 		self.setWindowTitle('The title of main window')

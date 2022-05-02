@@ -38,6 +38,7 @@ class MainWindow(qtw.QWidget):
 
 		self.show()
 
+	@qtc.pyqtSlot(bool)
 	def onBtnLogInClick(self, *args):
 		print(args)
 		print('btnLogIn was clicked')
