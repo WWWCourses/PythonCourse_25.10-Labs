@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>556</width>
-    <height>501</height>
+    <width>523</width>
+    <height>381</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,9 +16,9 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>0</x>
      <y>30</y>
-     <width>284</width>
+     <width>521</width>
      <height>57</height>
     </rect>
    </property>
@@ -53,38 +53,36 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="leUserName"/>
+    </item>
+    <item row="1" column="0">
      <widget class="QLabel" name="label_3">
       <property name="text">
        <string>password</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="leUserName"/>
-    </item>
-    <item row="2" column="1">
+    <item row="1" column="1">
      <widget class="QLineEdit" name="lePass"/>
     </item>
-    <item row="3" column="1">
-     <widget class="QPushButton" name="btnSubmit">
-      <property name="text">
-       <string>Submit</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
+    <item row="2" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnSubmit">
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCancel">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
