@@ -1,0 +1,30 @@
+div{
+	/* border: 1px dotted gray; */
+	width: 400px;
+	height: 50px;
+}
+
+input{
+	border: 2px solid #900;
+}
+
+input:focus{
+	border-color: #99F;
+	outline:none;
+}
+
+button{
+	background-color: aqua;
+}
+button:hover{
+	background-color:aquamarine;
+}
+#user-name{
+	color:#900;
+}
+#password{
+	color: #009;
+}
+.blue-border{
+	border:1px dotted blue;
+}

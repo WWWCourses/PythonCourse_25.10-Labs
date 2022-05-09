@@ -1,0 +1,12 @@
+QLabel#labelUsername{
+	color:#F00;
+	background-color:#333;
+	margin-left: 50px;
+	border: 2px solid orange;
+	font-size: 30px;
+	padding: 20px;
+}
+QPushButton:hover{
+	background-color:aqua;
+	font-size: 30px;
+}
