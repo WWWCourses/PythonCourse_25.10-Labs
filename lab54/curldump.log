@@ -1,0 +1,58 @@
+== Info:   Trying 127.0.0.1:8080...
+== Info: TCP_NODELAY set
+== Info: Connected to 127.0.0.1 (127.0.0.1) port 8080 (#0)
+=> Send header, 78 bytes (0x4e)
+0000: GET / HTTP/1.1
+0010: Host: 127.0.0.1:8080
+0026: User-Agent: curl/7.68.0
+003f: Accept: */*
+004c: 
+== Info: Mark bundle as not supporting multiuse
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 22 bytes (0x16)
+0000: Accept-Ranges: bytes
+<= Recv header, 34 bytes (0x22)
+0000: Cache-Control: public, max-age=0
+<= Recv header, 46 bytes (0x2e)
+0000: Last-Modified: Wed, 18 May 2022 16:01:04 GMT
+<= Recv header, 27 bytes (0x1b)
+0000: ETag: W/"14a-180d7e6bb3a"
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=UTF-8
+<= Recv header, 22 bytes (0x16)
+0000: Content-Length: 1511
+<= Recv header, 37 bytes (0x25)
+0000: Date: Wed, 18 May 2022 17:45:18 GMT
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 23 bytes (0x17)
+0000: Keep-Alive: timeout=5
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 1511 bytes (0x5e7)
+0000: <!DOCTYPE html>.<html lang="en">.<head>..<meta charset="UTF-8">.
+0040: .<meta name="viewport" content="width=device-width, initial-scal
+0080: e=1.0">..<title>index </title>..<style>...img{....width: 200px;.
+00c0: ..}..</style>.</head>.<body>..<h1>Welcome to my site</h1>..<img 
+0100: src="./microsoft-365-K7DehNGIOxI-unsplash (1).jpg" alt="">.<!-- 
+0140: Code injected by live-server -->.<script type="text/javascript">
+0180: ..// <![CDATA[  <-- For SVG support..if ('WebSocket' in window) 
+01c0: {...(function() {....function refreshCSS() {.....var sheets = []
+0200: .slice.call(document.getElementsByTagName("link"));.....var head
+0240:  = document.getElementsByTagName("head")[0];.....for (var i = 0;
+0280:  i < sheets.length; ++i) {......var elem = sheets[i];......head.
+02c0: removeChild(elem);......var rel = elem.rel;......if (elem.href &
+0300: & typeof rel != "string" || rel.length == 0 || rel.toLowerCase()
+0340:  == "stylesheet") {.......var url = elem.href.replace(/(&|\?)_ca
+0380: cheOverride=\d+/, '');.......elem.href = url + (url.indexOf('?')
+03c0:  >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+0400: ......}......head.appendChild(elem);.....}....}....var protocol 
+0440: = window.location.protocol === 'http:' ? 'ws://' : 'wss://';....
+0480: var address = protocol + window.location.host + window.location.
+04c0: pathname + '/ws';....var socket = new WebSocket(address);....soc
+0500: ket.onmessage = function(msg) {.....if (msg.data == 'reload') wi
+0540: ndow.location.reload();.....else if (msg.data == 'refreshcss') r
+0580: efreshCSS();....};....console.log('Live reload enabled.');...})(
+05c0: );..}..// ]]>.</script>.</body>.</html>
+== Info: Connection #0 to host 127.0.0.1 left intact

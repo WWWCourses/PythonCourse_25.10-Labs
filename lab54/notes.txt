@@ -1,0 +1,19 @@
+IPv4: XXX.XXX.XXX.XXX
+	 min: 0.0.0.0
+	 max: 255.255.255.255
+
+IPv6:
+
+IOT: Internet Of Things
+
+# ------------------------------------- ~ ------------------------------------ #
+
+CTRL+SHIFT+I = > open browser's dev tools
+
+# ------------------------------------- ~ ------------------------------------ #
+https://abv.bg
+https://files.binar.bg/media/2018/01/Damata-s-rentgenovite-ochi.mp3
+
+
+https://www.google.com/search
+?q=html6&oq=html6&aqs=chrome..69i57j0i512l4j0i10i512l2j0i512l3.6652j0j4&sourceid=chrome&ie=UTF-8
