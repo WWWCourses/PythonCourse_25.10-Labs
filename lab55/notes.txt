@@ -1,0 +1,35 @@
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,und;q=0.8,bg;q=0.7
+Cache-Control: max-age=0
+Connection: keep-alive
+Cookie: _ga=GA1.2.1031710894.1641828373; _hjid=7ccaf254-84b9-492b-94ec-b9a3228a65bf; =eyJpZCI6ImNhZDgyMTQ3LWQ5MTYtNTJjMi1iZGVmLTY3ZTUyNmRlYTYyYiIsImNyZWF0ZWQiOjE2NDE4MjgzNzMyNTUsI_hjSessionUser_2406078mV4aXN0aW5nIjp0cnVlfQ==; __utmz=100529357.1647967596.8.3.utmcsr=wwwcourses.github.io|utmccn=(referral)|utmcmd=referral|utmcct=/; __gfp_64b=qTnaG6.Zl7bnEFeJbvVW2Xti1JRh9si7r77Mv4PzEeH.C7|1641828373; __utma=100529357.1031710894.1641828373.1652894420.1653320026.12; __utmc=100529357; _clck=1fgxjl8|1|f1p|0; _gid=GA1.2.2026970189.1653320027; _hjSession_2406078=eyJpZCI6ImRkMTgzYzJhLWU2NTUtNDJmZi1hOWNiLTc4NDkzNWUyZjAxNyIsImNyZWF0ZWQiOjE2NTMzMjAwMjc5MTMsImluU2FtcGxlIjpmYWxzZX0=; _hjAbsoluteSessionInProgress=0; PHPSESSID=i5lcb0mmqvskljp3bp89qhg8c3; __utmt=1; _gat_UA-79923314-2=1; _hjIncludedInSessionSample=0; __utmb=100529357.4.10.1653320026; _clsk=qrif2b|1653320661315|4|1|b.clarity.ms/collect
+Host: bnr.bg
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+
+# ------------------------------- response demo ------------------------------ #
+HTTP/1.1 200 OK
+Date: Mon, 23 May 2022 15:44:10 GMT
+Server: Apache/2.2.15 (CentOS)
+Last-Modified: Mon, 23 May 2022 08:34:56 GMT
+ETag: "1016c4f-9f25-5dfa9b7045210"
+Accept-Ranges: bytes
+Content-Length: 40741
+Cache-Control: max-age=2592000
+Expires: Wed, 22 Jun 2022 15:44:10 GMT
+Content-Type: image/jpeg
+
+
+http://127.0.0.1:5500/lab55/HTTP_server/front-end/login.html
+http://127.0.0.1:5500/lab55/HTTP_server/front-end/login.py?
+
+https://docs.python-requests.org/en/latest/api/#requests.request
