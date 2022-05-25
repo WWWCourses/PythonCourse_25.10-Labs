@@ -1,0 +1,3 @@
+HOST: docs.python.org/
+
+PATH: /3/library/http.server.html?highlight=http%20server%20basehttprequesthandler#http.server.BaseHTTPRequestHandler
