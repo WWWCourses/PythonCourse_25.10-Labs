@@ -24,7 +24,7 @@ clients=list()
 def broadcast(message,client_to_exclude):
 	for client in clients:
 		if client != client_to_exclude:
-			print(f'Send meg to {client.raddr}')
+			print(f'Send message "{message}" to {client.getpeername()}')
 			client.send(message.encode(ENCODING))
 
 
@@ -32,12 +32,16 @@ def handle_client(client):
 	while True:
 		try:
 			msg=client.recv(BUFSIZE).decode(ENCODING)
-			print(msg)
-			broadcast(f'{client.raddr} sends: msg',client)
-		except:
-			print(clients)
+			if msg:
+				print(f'Received from {client.getpeername()}: {msg}')
+				broadcast(msg,client)
+			else:
+				client.close()
+		except Exception as err:
+			print(f'ERROR: {err}')
 			clients.remove(client)
 			client.close()
+			break
 
 
 while True:
