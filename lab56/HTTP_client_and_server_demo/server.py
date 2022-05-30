@@ -29,21 +29,21 @@ class RequestHandler(BaseHTTPRequestHandler):
 
 	def do_GET(self):
 		# Make response body:
-		# PATH: /index.html/?userName=Ada&pass=123
+		# PATH: /index.html?userName=Ada&pass=123
 		if self.path =="/":
 			file = httpd_root+self.path+'index.html'
 		else:
 			# get query params, if any
-			rgex = re.compile(r'^\/ \?(.*)$')
+			rgex = re.compile(r'^(\/[^?]+)\??(.+)?$')
 			m = rgex.search(self.path)
 			if m:
-				query = m.group(1)
-				print(f'QUERY: {query}')
+				file_path = m.group(1)
+				query = m.group(2)
+				print(f'file_path: {file_path}, QUERY: {query}')
 				# do something with query
 
 			# get file
-			# TODO: fix bug with file path if there is query string
-			file = httpd_root+self.path
+			file = os.path.normpath(httpd_root+'/'+ self.path)
 
 		try:
 			body = open(file, 'rb').read()
