@@ -16,7 +16,7 @@ def recieve_messages(client):
 	while True:
 		try:
 			msg = client.recv(BUFSIZE).decode(ENCODING)
-			print(f'>{msg}')
+			print(f'{msg}')
 		except Exception as err:
 			print(f'ERROR: {err}')
 			client.close()

@@ -34,6 +34,7 @@ def handle_client(client):
 			msg=client.recv(BUFSIZE).decode(ENCODING)
 			if msg:
 				print(f'Received from {client.getpeername()}: {msg}')
+				msg=f'[{client.getpeername()[1]}]:{msg}'
 				broadcast(msg,client)
 			else:
 				client.close()
