@@ -1,0 +1,26 @@
+nav{
+	display: flex;
+}
+nav ul{
+	display: flex;
+}
+nav li{
+	margin-right: 1em;
+	list-style-type: none;
+}
+nav li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+nav li a:hover{
+	background-color: #3cc3ce;
+	color: white;
+}
+
+.span9{
+	color:#F00;
+}
+.first{
+	border: 2px solid orange;
+}
